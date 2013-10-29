@@ -5,7 +5,7 @@
 
 
 FILE* load_elf_file(char *elf_file_name) {
-  const char *objcopy_arg = "or1k-elf-objcopy -O binary";
+  const char *objcopy_arg = "or32-elf-objcopy -O binary";
   FILE *bin_file;
   char *bin_file_name = NULL;
   char *system_args = NULL;
