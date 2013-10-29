@@ -24,6 +24,11 @@ int main(int argc, char **argv, char **env) {
   uint32_t insn = 0;
   int t = 0;
 
+  Verilated::traceEverOn(true);
+  VerilatedVcdC* tfp = new VerilatedVcdC;
+  top->trace (tfp, 99);
+  tfp->open ("simx.vcd");
+
   if(elf_file_name) {
     printf("Loading %s\n",elf_file_name);
     FILE *bin_file = load_elf_file(elf_file_name);
@@ -40,10 +45,7 @@ int main(int argc, char **argv, char **env) {
   top->wb_clk_i = 0;
   top->wb_rst_i = 1;
 
-  Verilated::traceEverOn(true);
-  VerilatedVcdC* tfp = new VerilatedVcdC;
-  top->trace (tfp, 99);
-  tfp->open ("simx.vcd");
+
 
   while(!done) {
     tfp->dump(t);
