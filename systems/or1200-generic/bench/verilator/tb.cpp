@@ -76,7 +76,7 @@ void parseArgs(int argc, char **argv) {
     } /*else if ((strcmp(argv[i], "-q") == 0) ||
 	       (strcmp(argv[i], "--quiet") == 0)) {
 	       quiet = true;
-    }*/ else if (strcmp(argv[i], "--or1k-elf-load") == 0) {
+    }*/ else if (strcmp(argv[i], "-f") == 0) {
       i++;
 	elf_file_name = argv[i];
     } /*else if ((strcmp(argv[i], "-d") == 0) ||
