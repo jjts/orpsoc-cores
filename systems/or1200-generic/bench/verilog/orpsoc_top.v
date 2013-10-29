@@ -171,7 +171,7 @@ module orpsoc_top
     .wbs_ack_i (wb_s2m_uart8_ack),
     .wbs_err_i (wb_s2m_uart8_err),
     .wbs_rty_i (wb_s2m_uart8_rty));
-
+/* fui eu que comentei
    wb_uart_wrapper #(.DEBUG (0))
    wb_uart_wrapper0
      (
@@ -189,7 +189,7 @@ module orpsoc_top
       .wb_ack_o	(wb_s2m_uart8_ack),
       .wb_err_o (wb_s2m_uart8_err),
       .wb_rty_o (wb_s2m_uart8_rty));
-
+*/
    ////////////////////////////////////////////////////////////////////////
    //
    // OR1200 Interrupt assignment
