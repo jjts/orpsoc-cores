@@ -26,6 +26,10 @@ include_files =
 source_type = systemC
 verilator_options = -Wno-fatal --trace
 src_files = 
+ bench/verilator/OrpsocAccess.cpp
+ bench/verilator/MemoryLoad.cpp
+ bench/verilator/Or1200MonitorSC.cpp
+ bench/verilator/ResetSC.cpp
 include_files = 
  bench/verilator/OrpsocMain.h
  bench/verilator/OrpsocAccess.h
