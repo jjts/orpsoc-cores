@@ -48,10 +48,10 @@
 
 #include <verilated_vcd_c.h>
 
-/*têm ficheiro não encontrados
+
 #include "ResetSC.h" 
 #include "Or1200MonitorSC.h"
-*/
+
 
 // Include Verilog ORPSoC defines file, converted to C include format to be
 // able to detect if the debug unit is to be built in or not.
@@ -297,8 +297,8 @@ int sc_main(int argc, char *argv[])
 #endif
 
 	// Connect up ORPSoC
-	orpsoc->clk_pad_i(clk);
-	orpsoc->rst_n_pad_i(rstn);
+	orpsoc->wb_clk_i(clk);
+	orpsoc->wb_rst_i(rstn);
 
 #ifdef JTAG_DEBUG
 	orpsoc->tck_pad_i(jtag_tck);	// JTAG interface

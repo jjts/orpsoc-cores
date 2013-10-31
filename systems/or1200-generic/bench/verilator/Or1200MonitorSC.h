@@ -33,7 +33,7 @@
 #include <fstream>
 #include <ctime>
 
-//#include "systemc.h" não encontro 
+#include "systemc.h" 
 
 #include "OrpsocAccess.h"
 #include "MemoryLoad.h"

@@ -29,7 +29,7 @@
 #ifndef RESET_SC__H
 #define RESET_SC__H
 
-//#include "systemc" não o encontro
+#include "systemc" 
 
 //! Provide a SystemC reset signal at startup
 
