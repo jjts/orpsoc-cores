@@ -38,4 +38,5 @@ include_files =
  bench/verilator/ResetSC.h
  bench/verilator/Or1200MonitorSC.h
  bench/verilator/elf.h
+ bench/verilator/UartSC.h
 tb_toplevel   = bench/verilator/OrpsocMain.cpp
