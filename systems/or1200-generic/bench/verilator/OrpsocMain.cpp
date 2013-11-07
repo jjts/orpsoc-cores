@@ -298,7 +298,7 @@ int sc_main(int argc, char *argv[])
 
 	// Connect up ORPSoC
 	orpsoc->wb_clk_i(clk);
-	orpsoc->wb_rst_i(rstn);
+	orpsoc->wb_rst_i(rst);
 
 #ifdef JTAG_DEBUG
 	orpsoc->tck_pad_i(jtag_tck);	// JTAG interface
