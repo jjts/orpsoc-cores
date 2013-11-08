@@ -57,7 +57,7 @@
 // able to detect if the debug unit is to be built in or not.
 //#include "orpsoc-defines.h"
 //#define JTAG_DEBUG
-#define UART0
+//#define UART0
 
 #ifdef JTAG_DEBUG
 # include "GdbServerSC.h"
